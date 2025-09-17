@@ -1,0 +1,144 @@
+.feedback-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feedback-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.feedback-title-icon {
+  width: 32px;
+  height: 32px;
+  color: #667eea;
+  margin-bottom: 12px;
+}
+
+.feedback-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 8px 0;
+}
+
+.feedback-header p {
+  color: #718096;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.feedback-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.feedback-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent-color);
+}
+
+.feedback-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.feedback-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.feedback-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feedback-icon .icon {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.feedback-title-section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 4px 0;
+}
+
+.feedback-title-section p {
+  color: #718096;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.feedback-content {
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.feedback-content p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .feedback-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .feedback-card {
+    padding: 20px;
+  }
+  
+  .feedback-card-header {
+    gap: 12px;
+  }
+  
+  .feedback-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .feedback-icon .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .feedback-title-section h3 {
+    font-size: 1.2rem;
+  }
+  
+  
+}

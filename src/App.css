@@ -1,0 +1,130 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 1200px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.app-header {
+  text-align: center;
+  padding: 40px 40px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.app-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.app-main {
+  padding: 40px;
+}
+
+.error-message {
+  text-align: center;
+  padding: 40px;
+  background: #fee;
+  border: 2px solid #fcc;
+  border-radius: 16px;
+  color: #c33;
+}
+
+.error-message h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #a22;
+}
+
+.error-message p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.retry-button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.retry-button:hover {
+  background: #5a6fd8;
+  transform: translateY(-2px);
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.new-essay-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.new-essay-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+  
+  .app-container {
+    border-radius: 16px;
+  }
+  
+  .app-header {
+    padding: 30px 20px 15px;
+  }
+  
+  .app-title {
+    font-size: 2rem;
+  }
+  
+  .app-main {
+    padding: 20px;
+  }
+  
+  .results-container {
+    gap: 20px;
+  }
+}
