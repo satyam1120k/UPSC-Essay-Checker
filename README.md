@@ -18,6 +18,9 @@ AI-powered essay evaluation for UPSC practice. Enter an essay, the backend calls
 5. Frontend renders the scorecard and section-wise feedback.
 
 ## Features
+**Language Quality Evaluation**:This is a workflow for LangGraph to evaluate essays for rating and feedback
+
+<img width="591" height="333" alt="Image" src="https://github.com/user-attachments/assets/d943a1c6-ab6d-4e3e-a961-0784dcbbc073" />
 
 - **AI-Powered Evaluation**: Uses Google Gemini for analysis.
 - **Multi-Dimensional Feedback**:
