@@ -18,7 +18,7 @@ function App() {
     setFeedback(null);
 
     try {
-      const apiBase = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000'; // set to your Vercel URL in production
+      const apiBase = process.env.REACT_APP_API_BASE_URL || 'https://essay-checker-backend.vercel.app'; 
       const response = await fetch(`${apiBase}/evaluate`, {
         method: 'POST',
         headers: {
@@ -28,13 +28,18 @@ function App() {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to evaluate essay');
+        let message = `Request failed (${response.status})`;
+        try {
+          const errBody = await response.json();
+          if (errBody && errBody.error) message = errBody.error;
+        } catch (_) {}
+        throw new Error(message);
       }
 
       const data = await response.json();
       setFeedback(data);
     } catch (err) {
-      setError(err.message);
+      setError(err?.message || 'Network error');
     } finally {
       setLoading(false);
     }
