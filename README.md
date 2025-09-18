@@ -6,7 +6,8 @@ AI-powered essay evaluation for UPSC practice. Enter an essay, the backend calls
 
 - **Frontend**: [Live Demo](https://samir1120k.github.io/UPSC-Essay-Checker) (GitHub Pages)
 - **Backend**: [API Endpoint](https://essay-checker-backend.vercel.app) (Vercel)
-- **Repository**: [Source Code](https://github.com/samir1120k/UPSC-Essay-Checker) (GitHub)
+- **Repository**: [Frontend source Code](https://github.com/samir1120k/UPSC-Essay-Checker) (GitHub)
+- **Repository**: [Backend source Code](https://github.com/samir1120k/essay-checker-backend) (GitHub)
 
 ## How It Works
 
