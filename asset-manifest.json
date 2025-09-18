@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/UPSC-Essay-Checker/static/css/main.88076bbf.css",
+    "main.js": "/UPSC-Essay-Checker/static/js/main.6485f283.js",
+    "index.html": "/UPSC-Essay-Checker/index.html",
+    "main.88076bbf.css.map": "/UPSC-Essay-Checker/static/css/main.88076bbf.css.map",
+    "main.6485f283.js.map": "/UPSC-Essay-Checker/static/js/main.6485f283.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88076bbf.css",
+    "static/js/main.6485f283.js"
+  ]
+}
