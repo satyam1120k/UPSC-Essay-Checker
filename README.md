@@ -4,9 +4,9 @@ AI-powered essay evaluation for UPSC practice. Enter an essay, the backend calls
 
 ## Live Links
 
-- Frontend (GitHub Pages): `https://satyam1120k.github.io/UPSC-Essay-Checker`
+- Frontend (GitHub Pages): `https://samir1120k.github.io/UPSC-Essay-Checker`
 - Backend (Vercel): `https://essay-checker-backend.vercel.app`
-- Repository: [`UPSC-Essay-Checker` on GitHub](https://github.com/satyam1120k/UPSC-Essay-Checker)
+- Repository: [`UPSC-Essay-Checker` on GitHub](https://github.com/samir1120k/UPSC-Essay-Checker)
 
 ## How It Works
 
@@ -17,6 +17,10 @@ AI-powered essay evaluation for UPSC practice. Enter an essay, the backend calls
 5. Frontend renders the scorecard and section-wise feedback.
 
 ## Features
+
+**Language Quality Evaluation**:This is a workflow for LangGraph to evaluate essays for rating and feedback
+
+<img width="591" height="333" alt="Image" src="https://github.com/user-attachments/assets/d943a1c6-ab6d-4e3e-a961-0784dcbbc073" />
 
 - **AI-Powered Evaluation**: Uses Google Gemini for analysis.
 - **Multi-Dimensional Feedback**:
